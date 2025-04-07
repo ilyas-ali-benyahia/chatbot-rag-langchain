@@ -25,7 +25,7 @@ An AI-powered gym assistant that:
 
 1. **clone the project**
    ```bash
-   git clone 
+   git clone https://github.com/ilyas-ali-benyahia/chatbot-rag-langchain.git
 3. **Install dependencies**  
    ```bash
    pip install cohere langchain supabase google-generativeai python-dotenv
@@ -52,29 +52,11 @@ Create a .env file in the root directory of your project and add the following:
 
 
 **🎯 Features**
-**Context-Aware Responses**: Retrieves relevant snippets before answering
-
-**Multilingual Support**: Handles non-English queries via Cohere
-
-**Conversation History**: Maintains dialogue context
-
-**Easy Knowledge Updates**: Just modify info.txt    
+   ```bash
+   **Context-Aware Responses**: Retrieves relevant snippets before answering
+   **Multilingual Support**: Handles non-English queries via Cohere   
+   **Conversation History**: Maintains dialogue context   
+   **Easy Knowledge Updates**: Just modify info.txt    
 
 
-
-
-# 🏋️‍♂️ AI-Powered Fitness Chatbot
-
-A smart chatbot powered by Cohere, LangChain, Supabase, and Google Gemini that provides fitness guidance based on your custom content.
-
----
-
-## 🚀 Setup Instructions
-
-### 1. Install Dependencies
-
-Install all required Python packages using pip:
-
-```bash
-pip install cohere langchain supabase google-generativeai python-dotenv
 
