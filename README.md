@@ -1,79 +1,58 @@
-🏋️‍♂️ Gym Chatbot with RAG (Retrieval-Augmented Generation)
-This Python implementation creates an intelligent gym assistant chatbot using:
+# 💪 AI Gym Assistant Chatbot
 
-Google Gemini for response generation
+**A Retrieval-Augmented Generation (RAG) chatbot for fitness advice**  
+*Powered by Gemini 1.5, Cohere, and Supabase*
 
-Cohere for text embeddings
+![Demo](https://img.shields.io/badge/Demo-Terminal_Interface-green) 
+![RAG](https://img.shields.io/badge/Architecture-RAG-blue)
 
-Supabase as a vector database
+## 🔍 Overview
+An AI-powered gym assistant that:
+- Answers fitness questions using your custom knowledge base (`info.txt`)
+- Implements semantic search with **Cohere's multilingual embeddings**
+- Generates natural responses via **Google Gemini 1.5**
+- Stores vectors in **Supabase** for low-latency retrieval
 
-LangChain for text processing
+## 🛠️ Tech Stack
+| Component          | Technology                          |
+|--------------------|-------------------------------------|
+| **LLM**            | Google Gemini 1.5 Pro               |
+| **Embeddings**     | Cohere `embed-multilingual-light-v3`|
+| **Vector Database**| Supabase + pgvector                 |
+| **Text Processing**| LangChain                           |
 
-Key Features
-Knowledge Base Integration:
+## ⚡ Quick Start
 
-Processes text files to create a searchable knowledge base
+1. **Install dependencies**
+   pip install cohere langchain supabase google-generativeai python-dotenv
 
-Splits content into optimal chunks using LangChain's CharacterTextSplitter
+2. **Configure .env**
+    GEMINI_API_KEY=your_key_here
+    COHERE_API_KEY=your_key_here
+    SUPABASE_URL=your_project_url
+    SUPABASE_KEY=your_anon_key
+    
 
-Stores embeddings in Supabase for efficient retrieval
+3. **Add your fitness content**
+    Edit info.txt with exercise instructions, nutrition tips, etc.
+4. **Run the chatbot**
+    Run the chatbot
 
-Conversational AI:
 
-Uses Gemini Pro 1.5 for natural language understanding
+**📖 Example Usage**
 
-Maintains conversation history context
+    💪 You: How do I improve my squat form?
+    Bot: Here are 3 key tips:
+    1. Keep your chest up and core engaged...
+    2. Ensure knees track over toes...
+    3. Descend until thighs are parallel to... 
 
-Provides expert-level fitness advice
 
-Advanced Search:
+**🎯 Features**
+**Context-Aware Responses**: Retrieves relevant snippets before answering
 
-Implements semantic search with Cohere embeddings
+**Multilingual Support**: Handles non-English queries via Cohere
 
-Retrieves most relevant context using Supabase vector similarity
+**Conversation History**: Maintains dialogue context
 
-Customizable match threshold and result count
-
-Technical Components
-Component	Purpose	Technology
-Text Processing	Chunking and document handling	LangChain
-Embeddings	Text vectorization	Cohere multilingual-light-v3.0
-Vector Database	Storage and similarity search	Supabase
-LLM	Response generation	Gemini 1.5 Pro
-CLI Interface	User interaction	Python built-in
-Setup Instructions
-Install dependencies:
-
-bash
-Copy
-pip install cohere langchain supabase google-generativeai python-dotenv
-Configure environment variables:
-
-env
-Copy
-GEMINI_API_KEY=your_key
-COHERE_API_KEY=your_key
-SUPABASE_URL=your_url
-SUPABASE_KEY=your_key
-Prepare your knowledge base:
-
-Add gym/fitness information to info.txt
-
-The system will automatically process this file
-
-Run the chatbot:
-
-bash
-Copy
-python chatbot.py
-Usage Example
-plaintext
-Copy
-💪 Gym Chatbot - Type 'exit' to stop the chat.
-
-You: How do I properly do a deadlift?
-Bot: Here are the key steps for a proper deadlift:
-1. Stand with feet hip-width apart...
-2. Keep your back straight as you hinge at the hips...
-3. Grip the bar with hands just outside your legs...
-[Detailed instructions continue]
+**Easy Knowledge Updates**: Just modify info.txt    
