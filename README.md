@@ -59,3 +59,22 @@ SUPABASE_KEY=your_anon_key
 **Conversation History**: Maintains dialogue context
 
 **Easy Knowledge Updates**: Just modify info.txt    
+
+
+
+
+# 🏋️‍♂️ AI-Powered Fitness Chatbot
+
+A smart chatbot powered by Cohere, LangChain, Supabase, and Google Gemini that provides fitness guidance based on your custom content.
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Install Dependencies
+
+Install all required Python packages using pip:
+
+```bash
+pip install cohere langchain supabase google-generativeai python-dotenv
+
