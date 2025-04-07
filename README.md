@@ -27,12 +27,11 @@ An AI-powered gym assistant that:
    pip install cohere langchain supabase google-generativeai python-dotenv
 
 2. **Configure .env**
-    GEMINI_API_KEY=your_key_here
-    COHERE_API_KEY=your_key_here
-    SUPABASE_URL=your_project_url
-    SUPABASE_KEY=your_anon_key
-    
 
+      GEMINI_API_KEY=your_key_here
+      COHERE_API_KEY=your_key_here
+      SUPABASE_URL=your_project_url
+      SUPABASE_KEY=your_anon_key
 3. **Add your fitness content**
     Edit info.txt with exercise instructions, nutrition tips, etc.
 4. **Run the chatbot**
